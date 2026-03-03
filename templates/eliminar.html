@@ -7,6 +7,13 @@
   <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
 
   <div class="mb-5">
+    {{ macros.camposNuevos(form.id, class="bg-neutral-secondary-medium
+    border border-default-medium text-heading text-sm rounded-base
+    focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs
+    placeholder:text-body") }}
+  </div>
+
+  <div class="mb-5">
     {{ macros.camposNuevos(form.nombre, class="bg-neutral-secondary-medium
     border border-default-medium text-heading text-sm rounded-base
     focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs
@@ -39,7 +46,7 @@
       type="submit"
       class="text-white bg-brand border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
     >
-      Guardar
+      Eliminar
     </button>
 
     <a
